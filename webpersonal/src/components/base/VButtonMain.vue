@@ -2,8 +2,8 @@
    <a
     class="main-btn"
     href="#"
-    :style="{background: colorFondo, color: colorTexto}">
-    {{ texto }}
+    :style="{ backgroundColor: colorFondo, color: colorTexto}">
+       {{ textoBtn }}
    </a>
 
 </template>
@@ -12,7 +12,7 @@
     export default {
         name: 'VButtonMain',
         props: {
-            texto: String,
+            textoBtn: String,
             colorTexto: String,
             colorFondo: String
         }
@@ -22,12 +22,13 @@
 <style lang="scss" scoped>
 
 @import '../_app.scss';
+    
+
     .main-btn{
         padding: 7px 15px 7px 15px;
         font-family: $ff-secondary;
         border: 1px solid;
         margin: 5px;
-
-
+        text-decoration: none;
     }
 </style>

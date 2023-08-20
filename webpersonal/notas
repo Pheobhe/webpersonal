@@ -1,1 +1,5 @@
-clase 52 revisar el color del boton.
+clase 52 revisar el color del boton
+:color-fondo="color1"
+:color-texto="color2" 
+
+quede en minuto 4 de clase 53

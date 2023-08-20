@@ -7,7 +7,7 @@
 
             <span class="personal-data__left__content__text">Hola</span>
 
-            <h3 class="personal-data__left__content__name">Soy Lorena</h3>
+            <h3 class="personal-data__left__content__name">Soy Juan</h3>
             
             <p class="personal-data__left__content__description">
                 Soy Lorena y vivo en un mundo lleno de hipocresía
@@ -15,13 +15,14 @@
 
             <v-button-main
             
-            texto="Contactar"
-            
-            :color-texto="color2"
-            :color-fondo="color1"
+                textoBtn="Contactar"
+                color-fondo="#212121"
+                color-texto="#ff9f1a"
+             
             
             /> 
-
+            <!-- :color-fondo="color1"
+            :color-texto="color2" -->
         </div>
           
     </div>
@@ -37,31 +38,34 @@
 </template>
 
 <script>
-
+ 
+ 
  import VButtonMain from '@/components/base/VButtonMain.vue'
- import {colorUno, colorDos} from '@/components/_app.scss'
-
+ import { c1, c2 } from '@/components/_app.scss'
 
     export default {
         name:'ThePersonalData',
-        data(){
-            return{
-                color1: colorUno,
-                color2: colorDos
-        }
-    },
         components: {
              VButtonMain
+        },
+        data () {
+            return {
+
+                color1: c1,
+                color2: c2,
+               
+                }
         }
     }
 </script>
 
 <style lang="scss" scoped>
   
-    @import '../_app.scss';
+    @import '../../components/_app.scss';
+    
 
     .personal-data{
-        border: 1px solid black;
+      
         display: flex;
      
 
