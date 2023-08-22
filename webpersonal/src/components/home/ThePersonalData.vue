@@ -14,11 +14,9 @@
             </p>
 
             <v-button-main
-            
                 textoBtn="Contactar"
                 color-fondo="#212121"
                 color-texto="#ff9f1a"
-             
             
             /> 
             <!-- :color-fondo="color1"
@@ -48,9 +46,9 @@
         components: {
              VButtonMain
         },
-        data () {
-            return {
-
+        data: function() {
+            return { c1,c2,
+               
                 color1: c1,
                 color2: c2,
                

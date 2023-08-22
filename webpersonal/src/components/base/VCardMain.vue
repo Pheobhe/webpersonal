@@ -1,7 +1,7 @@
 <template>
     <div class="main-card" :style="{ background: color }">
-        <h4>{{titulo}}</h4>
-        <p>{{contenido}}</p>
+        <h4 class="main-card__title">{{ titulo }}</h4>
+        <p class="main-card__text">{{ contenido }}</p>
 
 
     </div>
@@ -19,6 +19,22 @@
 </script>
 
 <style lang="scss" scoped>
-@import '../_app.scss';
+@import '../app.scss';
+.main-card{
+    width: 300px;
+    height: 150px;
+    padding: 2em;
+    color: $color-white;    
+    margin: 10px;
+    &__title{
+        font-family: $ff-primary;
+        font-size: 20px;
+        margin-bottom:  1em;
+    }
+    &__text{
+        font-family: $ff-secondary;
+    }
+}
+
 
 </style>

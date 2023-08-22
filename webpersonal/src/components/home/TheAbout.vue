@@ -16,7 +16,7 @@
                     <v-button-main
                            textoBtn="LinkedIn"
                            color-fondo="#212121"
-                color-texto="#ff9f1a"
+                           color-texto="#ff9f1a"
                     /> 
                     <v-button-main
                             textoBtn="GitHub"
@@ -35,7 +35,7 @@
 
     export default {
         name: 'TheAbout',
-        data() { 
+        data: function(){ 
             return{
                 color1: c1,
                 color2: c2,  
