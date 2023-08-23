@@ -4,3 +4,9 @@ clase 52 revisar el color del boton
 
 quede en minuto 4 de clase 53
 dejo 55
+
+npm install -D sass-loader sass
+npm update
+npm install  -save-dev node-sass
+npm install -D sass-loader sass
+npm install -g @vue/cli
