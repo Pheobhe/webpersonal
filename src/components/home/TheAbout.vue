@@ -15,13 +15,13 @@
                 <div class="about__content__right_ctrl">
                     <v-button-main
                            textoBtn="LinkedIn"
-                           color-fondo="#212121"
-                           color-texto="#ff9f1a"
+                           :color-fondo="color1"
+                           :color-texto="color2"
                     /> 
                     <v-button-main
                             textoBtn="GitHub"
-                            color-fondo="#ff9f1a"
-                            color-texto="#212121"
+                            :color-fondo="color2"
+                            :color-texto="color1"
                      /> 
                 </div>
             </div>
@@ -31,8 +31,8 @@
 
 <script>
  import VButtonMain from '@/components/base/VButtonMain.vue'
- import { c1, c2 } from '@/components/_app.scss'
-
+ //import { c1, c2 } from '@/components/_app.scss'
+ import { c1, c2 } from '@/components/_app.scss?vue&type=style&index=0&lang=scss&module=1'
     export default {
         name: 'TheAbout',
         data: function(){ 

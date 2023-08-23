@@ -25,14 +25,15 @@
 
 
 import VCardMain from '@/components/base/VCardMain'
-import { c3, c4, c5 } from '@/components/_app.scss'
+//import { c3, c4, c5 } from '@/components/_app.scss'
+import { c2, c3, c4, c5} from '@/components/_app.scss?vue&type=style&index=0&lang=scss&module=1'
 
     export default {
         name: 'TheSkills',
         data: function() {
-            return{ c3, c4, c5,
+            return{ c2, c3, c4, c5,
                 habilidades: [
-                    {'id': 0, titulo: 'Fuerza', contenido:'algún contenido de fuerza', color: "#ff9f1a"},
+                    {'id': 0, titulo: 'Fuerza', contenido:'algún contenido de fuerza', color: c2},
                     {'id': 1, titulo: 'Valentía', contenido:'algún contenido de valentía', color: c3},
                     {'id': 2, titulo: 'Coraje', contenido:'algún contenido de coraje', color: c4},
                     {'id': 3, titulo: 'Determinación', contenido:'algún contenido de determinación', color: c5},

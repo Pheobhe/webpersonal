@@ -15,12 +15,13 @@
 
             <v-button-main
                 textoBtn="Contactar"
-                color-fondo="#212121"
-                color-texto="#ff9f1a"
+                :color-fondo="color1"
+                :color-texto="color2"
             
             /> 
-            <!-- :color-fondo="color1"
-            :color-texto="color2" -->
+            <!--  
+            color-fondo="#212121"
+                color-texto="#ff9f1a"-->
         </div>
           
     </div>
@@ -39,18 +40,18 @@
  
  
  import VButtonMain from '@/components/base/VButtonMain.vue'
- import { c1, c2 } from '@/components/_app.scss'
-
-    export default {
+ //import { c1, c2 } from '@/components/_app.scss'
+ import { c1, c2 } from '@/components/_app.scss?vue&type=style&index=0&lang=scss&module=1'
+    
+ export default {
         name:'ThePersonalData',
         components: {
              VButtonMain
         },
         data: function() {
-            return { c1,c2,
-               
+            return {                
                 color1: c1,
-                color2: c2,
+                color2: c2
                
                 }
         }
